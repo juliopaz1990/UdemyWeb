@@ -64,7 +64,7 @@ public class ServletControlador extends HttpServlet {
                 request.setAttribute("usuario", usu);
 
                 
-                List<Usuario> usuarios = iusu.listar(); //prueba 
+                List<Usuario> usuarios = iusu.listar(); //prueba 34
                 request.setAttribute("usuarios", usuarios);
 
                 request.getRequestDispatcher("principal.jsp").forward(request, response);
