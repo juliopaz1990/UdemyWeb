@@ -71,7 +71,7 @@ public class ServletControlador extends HttpServlet {
                 
                 break;
                 
-                case "cerrar":
+                case "cerrar": //cerrar probando v2
                     
                     sesion = request.getSession();
                     sesion.invalidate();
