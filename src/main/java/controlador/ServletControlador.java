@@ -64,14 +64,14 @@ public class ServletControlador extends HttpServlet {
                 request.setAttribute("usuario", usu);
 
                 
-                List<Usuario> usuarios = iusu.listar(); //prueba con rama v2.2
+                List<Usuario> usuarios = iusu.listar(); //prueba con rama v2.3
                 request.setAttribute("usuarios", usuarios);
 
                 request.getRequestDispatcher("principal.jsp").forward(request, response);
                 
                 break;
                 
-                case "cerrar": //cerrar probando v2.2
+                case "cerrar": //cerrar probando v2.3
                     
                     sesion = request.getSession();
                     sesion.invalidate();
